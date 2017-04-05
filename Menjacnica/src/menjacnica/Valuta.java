@@ -1,8 +1,18 @@
 package menjacnica;
 
+import java.util.ArrayList;
+import java.util.Date;
+
+class Kurs {
+	Date datum;
+	double kurs;
+}
+
 public class Valuta {
 	private String naziv;
 	private String skraceniNaziv;
+	
+	private ArrayList<Kurs> listaKurseva = new ArrayList<Kurs>();
 	
 	public String getNaziv() {
 		return naziv;
@@ -36,3 +46,5 @@ public class Valuta {
 		return this.naziv;
 	}
 }
+
+
