@@ -17,4 +17,22 @@ public class Valuta {
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		Valuta val = (Valuta) obj;
+		return this.naziv.equals(val.naziv);
+	}
+	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.naziv;
+	}
 }
